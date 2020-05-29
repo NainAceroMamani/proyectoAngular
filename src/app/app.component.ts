@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SettingsService } from './services/service.index';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Proyecto';
+
+  // tslint:disable-next-line: variable-name
+  constructor(private _ajustes: SettingsService) {
+
+  }
 }
